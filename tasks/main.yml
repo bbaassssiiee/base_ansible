@@ -1,0 +1,46 @@
+---
+
+- name: install redhat packages
+  when: ansible_os_family == 'RedHat'
+  become: yes
+  yum:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items: "{{ ansible_rpms }}"
+
+- name: install debian packages
+  when: ansible_distribution == 'Debian'
+  become: yes
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ ansible_apts }}"
+  tags:
+    - python
+
+- name: install ubuntu packages
+  when: ansible_distribution == 'Ubuntu'
+  become: yes
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ ansible_apts }}"
+  tags:
+    - python
+
+- name: copy requirements.txt
+  copy:
+    src: requirements.txt
+    dest: /tmp/ansible_requirements.txt
+  tags:
+    - python
+    - pip
+
+- name: pip install dependencies
+  pip:
+    requirements: /tmp/ansible_requirements.txt
+    state: present
+  tags:
+    - python
+    - pip

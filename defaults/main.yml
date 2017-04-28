@@ -1,0 +1,11 @@
+---
+ansible_rpms:
+  - python
+  - python-pyasn1
+  - python-pip
+  - python-crypto
+  - python-httplib2
+
+ansible_apts:
+    - python
+    - python-pip
