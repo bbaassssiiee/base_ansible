@@ -25,5 +25,6 @@ galaxy_info:
     - development
 
 dependencies:
-    - { role: base_cplusplus }
-    - { role: base_python }
+    - bbaassssiiee.base_cplusplus
+    - bbaassiiee.base_python
+
