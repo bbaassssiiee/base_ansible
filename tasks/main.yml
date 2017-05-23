@@ -41,6 +41,7 @@
   pip:
     requirements: /tmp/ansible_requirements.txt
     state: present
+  retries: 3
   tags:
     - python
     - pip
