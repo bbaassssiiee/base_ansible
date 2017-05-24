@@ -23,6 +23,7 @@ pyrax
 requests
 shade
 wsgiref
+yamllint
 zmq
 ansible
 ansible-lint
