@@ -1,6 +1,9 @@
 ---
 
 ansible_rpms:
+  - python-passlib
+  - libsemanage-python
+  - policycoreutils-python
   - python
   - python-pyasn1
   - python-pip

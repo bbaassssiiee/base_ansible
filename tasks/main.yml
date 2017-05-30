@@ -29,6 +29,9 @@
   tags:
     - python
 
+- name: reload ansible_facts
+  setup:
+
 - name: copy requirements.txt
   copy:
     src: requirements.txt
