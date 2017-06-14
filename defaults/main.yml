@@ -11,5 +11,5 @@ ansible_rpms:
   - python-httplib2
 
 ansible_apts:
-    - python
-    - python-pip
+  - python
+  - python-pip

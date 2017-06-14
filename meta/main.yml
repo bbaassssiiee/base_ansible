@@ -10,22 +10,21 @@ galaxy_info:
   min_ansible_version: 2.2.1
 
   platforms:
-  - name: EL
-    versions:
-    - 6
-    - 7
-  - name: Ubuntu
-    versions:
-    - trusty
-  - name: Debian
-    versions:
-    - jessie
+    - name: EL
+      versions:
+        - 6
+        - 7
+    - name: Ubuntu
+      versions:
+        - trusty
+    - name: Debian
+      versions:
+        - jessie
 
   galaxy_tags:
     - system
     - development
 
 dependencies:
-    - bbaassssiiee.base_cplusplus
-    - bbaassssiiee.base_python
-
+  - bbaassssiiee.base_cplusplus
+  - bbaassssiiee.base_python
