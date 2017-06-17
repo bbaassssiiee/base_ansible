@@ -1,9 +1,9 @@
 ---
-
+# Standards: 0.2
 galaxy_info:
-  author: bbaassssiiee
-  description: run ansible with the python extensions for core modules
-  company: dockpack
+  author: Bas Meijer
+  description: run ansible with python extensions for core modules
+  company: bbaassssiiee
 
   license: MIT
 
@@ -12,14 +12,10 @@ galaxy_info:
   platforms:
     - name: EL
       versions:
-        - 6
         - 7
     - name: Ubuntu
       versions:
         - trusty
-    - name: Debian
-      versions:
-        - jessie
 
   galaxy_tags:
     - system
