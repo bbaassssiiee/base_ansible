@@ -1,0 +1,18 @@
+---
+# Standards: 0.2
+dependency:
+  name: galaxy
+driver:
+  name: docker
+    - name: base-anible-centos
+      image: milcom/centos7-systemd
+      image_version: latest
+      ansible_groups:
+        - group1
+    - name: base-anible-ubuntu
+      image: ubuntu
+      image_version: latest
+      ansible_groups:
+        - group2
+verifier:
+  name: testinfra
