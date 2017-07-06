@@ -1,6 +1,6 @@
 =========
 
-base_python is a role to install python in the context of Ansible (Tower). 
+base_python is a role to install python in the context of Ansible (Tower).
 It includes crypto extensions with compiled code.
 
 Requirements

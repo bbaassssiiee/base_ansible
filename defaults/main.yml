@@ -11,5 +11,9 @@ ansible_rpms:
   - python-httplib2
 
 ansible_apts:
+  - python-passlib
+  - libcurl4-openssl-dev
+  - python-pyasn1
+  - python-crypto
   - python
   - python-pip
