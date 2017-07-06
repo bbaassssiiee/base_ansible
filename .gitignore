@@ -1,0 +1,5 @@
+.DS_Store
+.molecule/
+tests/__pycache__/
+tests/test_default.pyc
+

@@ -2,16 +2,21 @@
 # Standards: 0.2
 dependency:
   name: galaxy
+  requirements_file: requirements.yml
 driver:
   name: docker
-    - name: base-anible-centos
+docker:
+  containers:
+    - name: base-ansible-centos
       image: milcom/centos7-systemd
       image_version: latest
+      privileged: True
       ansible_groups:
         - group1
-    - name: base-anible-ubuntu
+    - name: base-ansible-ubuntu
       image: ubuntu
       image_version: latest
+      privileged: True
       ansible_groups:
         - group2
 verifier:
