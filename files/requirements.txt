@@ -9,6 +9,7 @@ linode-python
 Jinja2
 netaddr
 paramiko
+passlib
 #psycopg2
 pycrypto
 pycurl
